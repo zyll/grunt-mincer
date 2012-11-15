@@ -18,8 +18,6 @@ exports.init = function(grunt) {
     var environment = new Mincer.Environment(process.cwd()),
       asset;
     for(var i = 0, l = unregister.length; i < l; i++) {
-      grunt.log.write(unregister[i].type)
-      grunt.log.write(unregister[i].processor)
       environment.unregisterPostProcessor(unregister[i].type, Mincer[unregister[i].processor]);
     }
     include.forEach(function(include) {
