@@ -36,6 +36,6 @@
     "gruntplugin", "mincer"
   ],
   "dependencies": {
-    "mincer": "git@github.com:zyll/mincer.git"
+    "mincer": "git://github.com/zyll/mincer.git"
   }
 }
